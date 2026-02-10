@@ -1,26 +1,245 @@
 @import "tailwindcss";
 
+@theme {
+  --breakpoint-sm: 320px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1200px;
+  --breakpoint-xl: 1920px;
+}
+
+/* =========================
+   FUSIONKODE BASE SYSTEM
+========================= */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --fk-bg: #05070A;
+  --fk-text-primary: #F5F7FA;
+  --fk-text-secondary: rgba(255, 255, 255, 0.7);
+  --fk-border: rgba(255, 255, 255, 0.1);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Prevent horizontal scroll globally */
+html,
+body {
+  overflow-x: hidden;
+  background: var(--fk-bg);
+  color: var(--fk-text-primary);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Smooth font rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Selection styling */
+::selection {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+/* Remove default margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   FUSIONKODE GLASS SYSTEM
+========================= */
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.025);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+}
+
+.glass-soft {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+}
+
+.glass-strong {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 22px;
+}
+
+/* Glass CTA style */
+.glass-cta {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 16px;
+  transition: background 0.25s ease, border 0.25s ease;
+}
+
+.glass-cta:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+
+/* =========================
+   FUSIONKODE DEPTH SYSTEM
+========================= */
+
+.glass-panel,
+.glass-soft,
+.glass-strong {
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.glass-panel:hover,
+.glass-soft:hover,
+.glass-strong:hover {
+  box-shadow:
+    0 8px 28px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* CTA slight elevation */
+.glass-cta {
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+.glass-cta:hover {
+  box-shadow:
+    0 6px 20px rgba(0, 0, 0, 0.45);
+}
+
+/* Layout Safe Margin */
+.layout-wrapper {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-left: 8vw;
+  padding-right: 8vw;
+}
+
+/* Section Vertical Space */
+.section-padding {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: 140px;
+    padding-bottom: 140px;
   }
 }
 
+@media (min-width: 1200px) {
+  .section-padding {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+
+/* Tech Label */
+.tech-label {
+  font-family: ui-monospace, 'Cascadia Code', monospace;
+  font-size: 11px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Animations */
+.animate-fade-in {
+  animation: fadeIn 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Utility for text gradients / subtle fades */
+.text-fade {
+  color: var(--text-secondary);
+}
+
+/* Hide scrollbar for cleaner UI where needed */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* =========================
+   FUSIONKODE INTERACTION
+========================= */
+
+/* Navigation links */
+nav a {
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+nav a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* Underline slide effect */
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.6);
+  transition: width 0.25s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Glass panel hover refinement */
+.glass-panel {
+  transition: border 0.3s ease, background 0.3s ease;
+}
+
+.glass-panel:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Footer link hover */
+footer a {
+  transition: color 0.25s ease;
+}
+
+footer a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* Hide default cursor */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  cursor: none;
 }
