@@ -1,0 +1,104 @@
+
+> fusionkode1@0.1.0 dev
+> next dev --hostname 127.0.0.1 --port 3001
+
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://127.0.0.1:3001
+- Network:       http://127.0.0.1:3001
+
+✓ Starting...
+Creating turbopack project { dir: 'E:\\FUSIONKODE 1', testMode: true }
+✓ Ready in 7.1s
+○ Compiling / ...
+ GET / 200 in 10.4s (compile: 10.1s, render: 266ms)
+ GET / 200 in 59ms (compile: 5ms, render: 55ms)
+✓ Compiled in 1803ms
+✓ Compiled in 40ms
+ GET / 200 in 116ms (compile: 57ms, render: 59ms)
+✓ Compiled in 496ms
+✓ Compiled in 767ms
+ GET / 200 in 303ms (compile: 241ms, render: 62ms)
+✓ Compiled in 443ms
+ GET / 200 in 219ms (compile: 4ms, render: 215ms)
+ GET / 200 in 812ms (compile: 41ms, render: 771ms)
+✓ Compiled in 140ms
+✓ Compiled in 421ms
+ GET / 200 in 443ms (compile: 234ms, render: 209ms)
+✓ Compiled in 118ms
+ GET / 200 in 168ms (compile: 64ms, render: 104ms)
+ GET / 200 in 94ms (compile: 9ms, render: 85ms)
+ GET / 200 in 27ms (compile: 5ms, render: 22ms)
+ GET / 200 in 21ms (compile: 4ms, render: 17ms)
+ GET / 200 in 27ms (compile: 4ms, render: 24ms)
+ GET / 200 in 72ms (compile: 5ms, render: 66ms)
+✓ Compiled in 278ms
+ GET / 200 in 266ms (compile: 215ms, render: 51ms)
+✓ Compiled in 278ms
+ GET / 200 in 529ms (compile: 3ms, render: 526ms)
+ GET / 200 in 138ms (compile: 8ms, render: 131ms)
+✓ Compiled in 131ms
+✓ Compiled in 189ms
+✓ Compiled in 154ms
+ GET / 200 in 178ms (compile: 73ms, render: 105ms)
+ GET / 200 in 215ms (compile: 10ms, render: 205ms)
+✓ Compiled in 142ms
+ GET / 200 in 78ms (compile: 4ms, render: 74ms)
+ GET / 200 in 188ms (compile: 7ms, render: 181ms)
+✓ Compiled in 177ms
+ GET / 200 in 676ms (compile: 412ms, render: 264ms)
+✓ Compiled in 405ms
+✓ Compiled in 545ms
+ GET / 200 in 119ms (compile: 83ms, render: 36ms)
+✓ Compiled in 108ms
+✓ Compiled in 482ms
+ GET / 200 in 330ms (compile: 71ms, render: 258ms)
+ GET / 200 in 159ms (compile: 7ms, render: 151ms)
+ GET / 200 in 186ms (compile: 23ms, render: 164ms)
+ GET / 200 in 101ms (compile: 8ms, render: 93ms)
+ GET / 200 in 44ms (compile: 8ms, render: 36ms)
+ GET / 200 in 54ms (compile: 7ms, render: 47ms)
+ GET / 200 in 82ms (compile: 20ms, render: 61ms)
+ GET / 200 in 116ms (compile: 70ms, render: 45ms)
+ GET / 200 in 99ms (compile: 7ms, render: 92ms)
+ GET / 200 in 36ms (compile: 5ms, render: 31ms)
+✓ Compiled in 330ms
+ GET / 200 in 408ms (compile: 288ms, render: 121ms)
+✓ Compiled in 344ms
+ GET / 200 in 238ms (compile: 4ms, render: 234ms)
+✓ Compiled in 61ms
+✓ Compiled in 119ms
+ GET / 200 in 191ms (compile: 66ms, render: 125ms)
+ GET / 200 in 238ms (compile: 10ms, render: 228ms)
+ GET / 200 in 241ms (compile: 34ms, render: 207ms)
+✓ Compiled in 61ms
+✓ Compiled in 328ms
+✓ Compiled in 345ms
+✓ Compiled in 3.3s
+✓ Compiled in 260ms
+✓ Compiled in 416ms
+✓ Compiled in 1068ms
+ GET / 200 in 499ms (compile: 126ms, render: 373ms)
+ GET / 200 in 130ms (compile: 8ms, render: 122ms)
+ GET / 200 in 169ms (compile: 40ms, render: 129ms)
+ GET / 200 in 103ms (compile: 22ms, render: 82ms)
+ GET / 200 in 727ms (compile: 16ms, render: 711ms)
+ GET / 200 in 798ms (compile: 215ms, render: 584ms)
+ GET / 200 in 178ms (compile: 8ms, render: 170ms)
+ GET / 200 in 227ms (compile: 5ms, render: 222ms)
+ GET / 200 in 24ms (compile: 4ms, render: 19ms)
+ GET / 200 in 21ms (compile: 3ms, render: 18ms)
+ GET / 200 in 22ms (compile: 4ms, render: 18ms)
+ GET / 200 in 22ms (compile: 4ms, render: 17ms)
+ GET / 200 in 22ms (compile: 3ms, render: 18ms)
+ GET / 200 in 22ms (compile: 3ms, render: 19ms)
+ GET / 200 in 21ms (compile: 3ms, render: 19ms)
+✓ Compiled in 581ms
+✓ Compiled in 581ms
+✓ Compiled in 212ms
+✓ Compiled in 51ms
+○ Compiling /_error ...
+ GET / 500 in 5.9s (compile: 5.3s, render: 610ms)
+ GET / 500 in 32ms (compile: 14ms, render: 18ms)
+ GET / 500 in 21ms (compile: 12ms, render: 9ms)
+ GET / 500 in 22ms (compile: 11ms, render: 11ms)
+[?25h

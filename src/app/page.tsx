@@ -1,27 +1,23 @@
-import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Hook from "@/components/Hook";
-import ServicesRail from "@/components/ServicesRail";
-import Nexa from "@/components/Nexa";
-import Strategy from "@/components/Strategy";
-import Lab from "@/components/Lab";
-import ContactEngine from "@/components/ContactEngine";
+import About from "@/components/About";
+import Services from "@/components/Services";
+import Work from "@/components/Work";
+import Approach from "@/components/Approach";
+import Pricing from "@/components/Pricing";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import SectionSpacer from "@/components/system/SectionSpacer";
 
 export default function Home() {
   return (
-    <>
-      <Navbar />
+    <main id="top">
       <Hero />
-      <Hook />
-      <ServicesRail />
-      <SectionSpacer />
-      <Nexa />
-      <Strategy />
-      <Lab />
-      <ContactEngine />
+      <About />
+      <Services />
+      <Work />
+      <Approach />
+      <Pricing />
+      <Contact />
       <Footer />
-    </>
+    </main>
   );
 }
